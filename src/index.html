@@ -6,8 +6,8 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>WONDERCART BtoB受発注システム</title>
-    <meta name="description" content="B to B 受発注システム" />
+    <title>WONDERGIRL AI接客アバター</title>
+    <meta name="description" content="AI接客アバター" />
     <meta name="keywords" content="" />
     <!-- ogp -->
     <meta property="og:title" content="" />
@@ -41,13 +41,21 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="header__inner">
         <div class="header__logo">
-          <a href="#section-wonder-Overview"
-            ><img src="assets/images/common/pc-logo.png" alt="ロゴ"
-          /></a>
+          <a href="#top">
+            <picture>
+              <source
+                srcset="assets/images/common/sp-logo.png"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="assets/images/common/pc-logo.png"
+                alt="ロゴ"
+              /> </picture
+          ></a>
         </div>
         <div class="header__hamburger hamburger">
           <span></span>
@@ -57,7 +65,7 @@
         <!--pc-nav-->
         <nav class="header__pc-nav pc-nav">
           <ul class="pc-nav__content">
-            <li class="pc-nav__item">
+            <!-- <li class="pc-nav__item">
               <a href="#section-wonder-Overview">WONDERCARTとは</a>
             </li>
             <li class="pc-nav__item">
@@ -73,10 +81,10 @@
             </li>
             <li class="pc-nav__item">
               <a href="#section-Latest-information">最新情報</a>
-            </li>
+            </li> -->
             <li class="pc-nav__item pc-nav__item--download">
-              <a href="https://go.wonderline.cloud/l/1058163/2024-10-18/mcpxb"
-                >資料ダウンロード</a
+              <a href="https://www.jicoo.com/t/s-pri/e/Hv0LKGxM" target="_blank"
+                >商談予約フォーム</a
               >
             </li>
           </ul>
@@ -85,12 +93,12 @@
       <!--sp-nav-->
       <nav class="header__sp-nav sp-nav js-sp-nav">
         <ul class="sp-nav__content">
-          <li class="sp-nav__item">
+          <!-- <li class="sp-nav__item">
             <a href="#section-wonder-Overview" class="js-sp-navlink"
               >WONDERCARTとは</a
             >
-          </li>
-          <li class="sp-nav__item">
+          </li> -->
+          <!-- <li class="sp-nav__item">
             <a href="#section-introduction" class="js-sp-navlink"
               >導入までの流れ</a
             >
@@ -111,15 +119,22 @@
             <a href="#section-Latest-information" class="js-sp-navlink"
               >最新情報</a
             >
-          </li>
-          <!-- <li class="sp-nav__item">
-            <a href="#">資料ダウンロード</a>
           </li> -->
+          <li class="sp-nav__item">
+            <a href="https://www.jicoo.com/t/s-pri/e/Hv0LKGxM" target="_blank"
+              >商談予約フォーム</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="link-right-pc">
+      <div class="mv-pc u-desktop">
+        <div class="mv-pc__Img">
+          <img src="assets/images/common/mv-pc.png" alt="メインの画像" />
+        </div>
+      </div>
+      <!-- <div class="link-right-pc">
         <a
           href="https://www.s-pri.co.jp/quotation"
           class="link-right-pc__button link-right-pc__button--estimate"
@@ -130,17 +145,19 @@
           class="link-right-pc__button link-right-pc__button--experience"
           >デモ無料体験</a
         >
-      </div>
+      </div> -->
       <div class="link-bottom-sp">
         <a
-          href="https://go.wonderline.cloud/l/1058163/2024-10-18/mcpxb"
+          href="資料_wondergirl.pdf"
+          download="資料_wondergirl.pdf"
           class="link-bottom-sp__button link-bottom-sp__button--download"
           ><p class="link-bottom-sp__text">資料ダウンロード</p></a
         >
         <a
-          href="https://go.wonderline.cloud/l/1058163/2024-11-10/mfbmf"
+          href="https://www.jicoo.com/t/s-pri/e/Hv0LKGxM"
+          target="_blank"
           class="link-bottom-sp__button link-bottom-sp__button--experience"
-          ><p class="link-bottom-sp__text">デモ無料体験</p></a
+          ><p class="link-bottom-sp__text">商談予約フォーム</p></a
         >
       </div>
       <a
@@ -165,11 +182,17 @@
             >
           </div>
           <p class="Contact-information__textTime">
-            営業時間 10:00 - 17:00（土・日・祝祭日のぞく）
+            営業時間 10:00 - 16:00（土・日・祝日のぞく）
           </p>
         </div>
       </div>
-      <div id="targetSection" class="mvWrapper">
+
+      <div class="mv-sp u-mobile">
+        <div class="mv-sp__Img">
+          <img src="assets/images/common/mv-sp.png" alt="メインの画像" />
+        </div>
+      </div>
+      <!-- <div id="targetSection" class="mvWrapper">
         <div class="mvWrapper__inner">
           <div class="mvWrapper__text mv-explanation">
             <div class="mv-explanation__inner">
@@ -194,8 +217,8 @@
             />
           </div>
         </div>
-      </div>
-      <section id="section-wonder-Overview" class="wonder-Overview">
+      </div> -->
+      <!-- <section id="section-wonder-Overview" class="wonder-Overview">
         <div class="wonder-Overview__inner">
           <div class="wonder-Overview__title Section-title">
             <h2 class="Section-title__title">WONDERCARTとは</h2>
@@ -327,8 +350,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="section-introduction" class="introduction">
+      </section> -->
+      <!-- <section id="section-introduction" class="introduction">
         <div class="introduction__inner">
           <div class="introduction__title Section-title">
             <h2 class="Section-title__title">導入までの流れ</h2>
@@ -414,8 +437,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="section-support" class="support">
+      </section> -->
+      <!-- <section id="section-support" class="support">
         <div class="support__inner">
           <div class="support__title Section-title">
             <h2 class="Section-title__title">サポート</h2>
@@ -557,8 +580,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="section-function" class="function">
+      </section> -->
+      <!-- <section id="section-function" class="function">
         <div class="function__inner">
           <div class="function__title Section-title">
             <h2 class="Section-title__title">機能</h2>
@@ -743,7 +766,6 @@
             </div>
           </div>
           <div class="function__titleSecond Section-title">
-            <!-- <h2 class="Section-title__title">機能</h2> -->
             <h3 class="Section-title__text--bold">サプライヤー機能</h3>
           </div>
           <div
@@ -837,8 +859,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="section-fee" class="fee">
+      </section> -->
+      <!-- <section id="section-fee" class="fee">
         <div class="fee__inner">
           <div class="fee__title Section-title">
             <h2 class="Section-title__title">料金プラン</h2>
@@ -1451,8 +1473,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="reason">
+      </section> -->
+      <!-- <section class="reason">
         <div class="reason__inner">
           <h2 class="reason__title">
             WONDERCARTが圧倒的に<br class="u-mobile" />便利な4つの理由
@@ -1499,13 +1521,14 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section id="section-question" class="question">
         <div class="question__inner">
           <div class="question__title Section-title">
             <h2 class="Section-title__title">よくある質問</h2>
             <p class="Section-title__text">
-              サービスや料金プランなど、WONDERCART導入に関するよくある質問をご紹介します。
+              AI接客アバター「WONDERGIRL powered by
+              AVITA」導入に関するよくある質問をご紹介します。
             </p>
           </div>
           <div class="question__accordion">
@@ -1513,7 +1536,8 @@
               <div class="accordion__inner">
                 <div class="accordion__titleWrapper">
                   <h3 class="accordion__title">
-                    WONDERCARTと他の受発注サービスとの違いはなんですか？
+                    AI接客アバター「WONDERGIRL powered by
+                    AVITA」とはどんなサービス？
                   </h3>
                   <div class="accordion__plus expand-icon">
                     <span></span>
@@ -1522,7 +1546,43 @@
                 </div>
                 <div class="accordion__content">
                   <p class="accordion__text">
-                    商品スペックのリスト化や商品画像の加工、検索項目のタグ付け、各種データのシステム設定、バナーデザインやテンプレートのデザイン設定、公開に必要なサプライヤー管理項目の設定、ドメイン・サーバーの設定、検証・公開作業など、すべてを一括でお任せいただけるプランをご用意しております。また、カタログ制作と同時にご発注いただくことで、リーズナブルな価格での導入が可能となり、低予算での開発を実現します。<br />業務用カタログに特化し、中小企業の販促活動を長年サポートしてきた印刷会社ならではのノウハウと管理体制が、他のサービスとは一線を画しています。
+                    新日本印刷株式会社とAVITA株式会社と共同で開発したAI接客アバターサービスです。<br />アバター接客サービス「AVACOM」のパートナープログラムに参画し、AVITA提供の「AVACOM」を活用し「WONDERGIRL
+                    powered by AVITA」として本サービスを展開してまいります。<br />本サービスは、アバターと人のハイリッド対応が可能です。<br />人が複数拠点を遠隔対応できる点は当サービスならではの特長となります。<br />生成AI（ChatGPT等）の開発は別途お見積りが必要となります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">どんなシーンに最適ですか？</h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    インバウンド対応や夜間の無人対応、店舗での無人受付、施設での館内案内、自治体での行政手続ナビゲーション、展示会・イベントでの商品紹介、Webサイト上でのカスタマーサポート、当社WONDERCARTに搭載し在庫検索や受発注のサポートなど、幅広いシーンでの導入が期待されています。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">事例はありますか？</h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    こちらをご覧ください。<br />
+                    <a href="https://avita.co.jp/avacom/case" target="_blank"
+                      >https://avita.co.jp/avacom/case</a
+                    >
                   </p>
                 </div>
               </div>
@@ -1531,7 +1591,7 @@
               <div class="accordion__inner">
                 <div class="accordion__titleWrapper">
                   <h3 class="accordion__title">
-                    自社のサーバでも動作は可能ですか？
+                    初期費用には何が含まれますか？
                   </h3>
                   <div class="accordion__plus expand-icon">
                     <span></span>
@@ -1540,7 +1600,7 @@
                 </div>
                 <div class="accordion__content">
                   <p class="accordion__text">
-                    申し訳ございません。現状では新たに別サーバの契約が必要となります。カスタマイズでも対応不可となります。弊社が用意するXserverとAWSサーバの契約が必要となります。
+                    初期費用は100,000円（税別）となります。<br />1アカウント発行、初期設定サポート、カスタマーサポート（Googleフォームでの対応）となります。<br />導入規模や利用方法で変動するため、お客様のご予算感に合わせたご提案をさせていただきます。
                   </p>
                 </div>
               </div>
@@ -1549,7 +1609,7 @@
               <div class="accordion__inner">
                 <div class="accordion__titleWrapper">
                   <h3 class="accordion__title">
-                    どんなドメインでも対応しますか？
+                    月額費用には何が含まれますか？
                   </h3>
                   <div class="accordion__plus expand-icon">
                     <span></span>
@@ -1558,7 +1618,7 @@
                 </div>
                 <div class="accordion__content">
                   <p class="accordion__text">
-                    はい。独自ドメインで運用が可能です。弊社で新たにドメインを取得することも可能です。
+                    チャット（音声・テキスト）システム利用費、コンテンツ管理、AWSサーバ利用費、通信費等、月額50,000円（税別・年払い）～となります。<br />その他、オペレーション代行費（有人接客システム利用費）で月額30,000円（税別・年払い）～となります。<br />合計80,000円（税別・年払い）必要となります。<br />導入規模や利用方法で変動するため、お客様のご予算感に合わせたご提案をさせていただきます。
                   </p>
                 </div>
               </div>
@@ -1567,7 +1627,7 @@
               <div class="accordion__inner">
                 <div class="accordion__titleWrapper">
                   <h3 class="accordion__title">
-                    すでに導入済みの基幹システムと連携できますか？
+                    生成AIの開発費はどれくらいかかりますか？
                   </h3>
                   <div class="accordion__plus expand-icon">
                     <span></span>
@@ -1576,7 +1636,113 @@
                 </div>
                 <div class="accordion__content">
                   <p class="accordion__text">
-                    デフォルトでは連携できません。カスタマイズで対応可能な場合がほとんどですが、基幹システムの調査が必要となります。先方のシステム会社との打ち合わせをした上で、要件定義を重ねてまいります。
+                    生成AIの開発費は200,000円～（税別）となります。<br />別途運用保守で月額30,000円（税別・年払い）～となります。<br />導入規模や利用方法で変動するため、お客様のご予算感に合わせたご提案をさせていただきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">最低契約期間はありますか？</h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    最低契約期間は12ヶ月となります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">
+                    サポート体制はどうなっていますか？
+                  </h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    専門スタッフが導入前から導入後まで、電話、メール、Googleフォーム等でサポートいたします。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">無料で試すことはできますか？</h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    無料のデモを実施させていただいております。お気軽にお問い合わせくださ
+                    い。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">
+                    アバター操作など誰でも簡単に使えますか？
+                  </h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    特別な準備は必要なく、テレビ会議に参加するように簡単に操作が可能で
+                    す。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">
+                    オリジナルのアバターは作れますか？
+                  </h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    オリジナルアバターの制作も可能です（別途お見積り）。また豊富なアバターのラインナップを揃えておりますので、シチュエーションに合わせて最適なものをご利用いただけます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="question__accordionItem accordion">
+              <div class="accordion__inner">
+                <div class="accordion__titleWrapper">
+                  <h3 class="accordion__title">
+                    アバターではなく人が対応できますか？
+                  </h3>
+                  <div class="accordion__plus expand-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="accordion__content">
+                  <p class="accordion__text">
+                    アバターを使用せずに顔を出しての接客も可能です。アバターと顔出しをお好きなタイミングで切り替えられます。
                   </p>
                 </div>
               </div>
@@ -1589,7 +1755,7 @@
           <div class="Latest-information__titleWrapper">
             <h2 class="Latest-information__title">最新情報</h2>
             <p class="Latest-information__titleText">
-              WONDERCARTに関する<br />お知らせを配信。
+              AI接客アバター<br />「WONDERGIRL powered by AVITA」に<br />関するお知らせを配信。
             </p>
           </div>
           <div class="Latest-information__informationWrapper">
@@ -1597,7 +1763,7 @@
               <div class="information-card__inner">
                 <div class="information-card__timeWrapper">
                   <time datetime="2024-10-23" class="information-card__time"
-                    >2024.10.23</time
+                    >2025.04.21</time
                   >
                   <p class="information-card__tag">お知らせ</p>
                 </div>
@@ -1610,12 +1776,12 @@
               <div class="information-card__inner">
                 <div class="information-card__timeWrapper">
                   <time datetime="2024-10-23" class="information-card__time"
-                    >2024.10.23</time
+                    >2025.04.21</time
                   >
                   <p class="information-card__tag">展示会出展</p>
                 </div>
                 <p class="information-card__text">
-                  10月23日（水）〜25日（金）Japan DX Weekに出展します。
+                  4月23日（水）〜25日（金）Japan DX Weekに出展します。
                 </p>
               </div>
             </div>
@@ -1623,12 +1789,13 @@
               <div class="information-card__inner">
                 <div class="information-card__timeWrapper">
                   <time datetime="2024-10-23" class="information-card__time"
-                    >2024.10.23</time
+                    >2025.04.21</time
                   >
-                  <p class="information-card__tag">展示会出展</p>
+                  <p class="information-card__tag">お知らせ</p>
                 </div>
                 <p class="information-card__text">
-                  WONDERCARTサイトを公開しました。
+                  AI接客アバター「WONDERGIRL powered by
+                  AVITA」サイトを公開しました。
                 </p>
               </div>
             </div>
@@ -1638,9 +1805,12 @@
       <section class="inquiry">
         <div class="inquiry__inner">
           <div class="inquiry__title Section-title">
-            <h2 class="Section-title__title">お問い合わせ</h2>
-            <p class="Section-title__text">
-              WONDERCART導入やカスタマイズに関するお問い合わせや資料のご請求はこちらから。
+            <h2 class="Section-title__title Section-title__title--inquiry">
+              お問い合わせ
+            </h2>
+            <p class="Section-title__text Section-title__text--inquiry">
+              AI接客アバター「WONDERGIRL powered by
+              AVITA」導入に関するお問い合わせや資料のご請求はこちらから。
             </p>
           </div>
           <div class="inquiry__cardWrapper">
@@ -1655,7 +1825,7 @@
               <div class="inquiry__cardLeftPhoneWrapper">
                 <div class="inquiry__cardLeftPhoneImg">
                   <img
-                    src="assets/images/common/pc-phone.png"
+                    src="assets/images/common/pc-phone-blue.png"
                     alt="電話の画像"
                   />
                 </div>
@@ -1664,7 +1834,7 @@
                 >
               </div>
               <p class="inquiry__cardLeftTime">
-                営業時間 10:00 - 17:00（土・日・祝祭日のぞく）
+                営業時間 10:00 - 16:00（土・日・祝祭日のぞく）
               </p>
             </div>
             <div class="inquiry__cardRight">
@@ -1676,9 +1846,10 @@
                   />
                 </div>
               </div>
-              <p class="inquiry__contentRightText">5分でわかるPDF資料</p>
+              <p class="inquiry__contentRightText">1分でわかるPDF資料</p>
               <a
-                href="https://go.wonderline.cloud/l/1058163/2024-10-18/mcpxb"
+                href="資料_wondergirl.pdf"
+                download="資料_wondergirl.pdf"
                 class="inquiry__contentRightlink linkButton linkButton--download"
                 >資料ダウンロード</a
               >
@@ -1700,20 +1871,20 @@
           <nav class="footer__nav">
             <ul class="footer__navContent">
               <li class="footer__navItem">
-                <a href="#section-wonder-Overview">WONDERCARTとは</a>
+                <a href="#top">TOP</a>
               </li>
-              <li class="footer__navItem">
+              <!-- <li class="footer__navItem">
                 <a href="#section-introduction">導入までの流れ</a>
-              </li>
-              <li class="footer__navItem">
+              </li> -->
+              <!-- <li class="footer__navItem">
                 <a href="#section-support">サポート</a>
-              </li>
-              <li class="footer__navItem">
+              </li> -->
+              <!-- <li class="footer__navItem">
                 <a href="#section-function">機能</a>
-              </li>
-              <li class="footer__navItem">
+              </li> -->
+              <!-- <li class="footer__navItem">
                 <a href="#section-fee">料金プラン</a>
-              </li>
+              </li> -->
               <li class="footer__navItem">
                 <a href="#section-question">よくある質問</a>
               </li>
@@ -1741,7 +1912,7 @@
               </div>
             </div>
             <p class="footer__copyright">
-              &copy; <span id="currentYear"></span> WONDERCART
+              &copy; <span id="currentYear"></span> WONDERGIRL
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .information-card {
-  border-top: 1px solid $gray;
+  border-top: 1px solid $black;
   padding: rem(30) 0;
   @include mq("md") {
     padding: rem(30) rem(27) rem(20);
@@ -29,7 +29,7 @@
   letter-spacing: rem(0);
   font-family: $second-font-family;
   font-weight: $bold;
-  color: $white;
+  color: $black;
   @include mq("md") {
     font-size: rem(14);
     line-height: calc(14 / 14);
@@ -42,7 +42,8 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $medium;
-  color: $white;
+  color: $black;
+  background-color: $white;
   border: 1px solid $white;
   border-radius: 14px;
   padding: rem(5) rem(28);
@@ -62,7 +63,7 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $bold;
-  color: $white;
+  color: $black;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(20 / 16);

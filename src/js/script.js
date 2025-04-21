@@ -54,6 +54,19 @@ jQuery(function ($) {
       }
     });
   });
+  /* --------------------------------------------
+  * 　ヘッダーの背景をスクロールで変える
+  * -------------------------------------------- */
+  $(window).on('scroll', function() {
+    var targetPos = $('.Contact-information').offset().top;
+    var scrollPos = $(window).scrollTop();
+  
+    if (scrollPos > targetPos) {
+      $('.header').addClass('active');
+    } else {
+      $('.header').removeClass('active');
+    }
+  });
   // アコーディオン
   jQuery(function ($) {
     // アコーディオンのタイトルがクリックされたときにトグル処理

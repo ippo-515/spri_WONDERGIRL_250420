@@ -2,7 +2,7 @@
 
 .Latest-information {
   width: 100%;
-  margin: 0 0 rem(160);
+  margin: 0 0 rem(0);
   padding: rem(130) $padding-pc rem(170);
   background-color: $dark-blue;
 }
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  column-gap: rem(145);
+  column-gap: rem(45);
 }
 
 .Latest-information__titleWrapper {
@@ -26,7 +26,7 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $bold;
-  color: $white;
+  color: $black;
   margin-bottom: rem(30);
   @include mq("md") {
     font-size: rem(25);
@@ -43,7 +43,7 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $bold;
-  color: $white;
+  color: $black;
   // margin-bottom: rem(30);
   @include mq("md") {
     font-size: rem(16);
@@ -59,7 +59,7 @@
 
 @include mq("md") {
   .Latest-information {
-    margin: 0 0 rem(50);
+    margin: 0 0 rem(0);
     padding: rem(25) $padding-sp rem(25);
   }
 
