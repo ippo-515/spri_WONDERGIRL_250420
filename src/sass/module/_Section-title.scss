@@ -21,13 +21,17 @@
   }
 }
 
+.Section-title__title--inquiry {
+  color: $black;
+}
+
 .Section-title__text {
   font-size: rem(16);
   line-height: calc(32 / 16);
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $medium;
-  color: $black;
+  color: $white;
   // margin-bottom: rem(30);
   @include mq("md") {
     font-size: rem(16);
@@ -37,6 +41,10 @@
     margin: 0 auto;
     text-align: center;
   }
+}
+
+.Section-title__text--inquiry {
+  color: $black;
 }
 
 .Section-title__text--bold {

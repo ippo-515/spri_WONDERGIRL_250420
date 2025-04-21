@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .accordion {
-  border-top: 1px solid $title-black;
+  border-top: 1px solid $dark-blue;
   padding: 0 rem(30);
   // width: 100%;
   // max-width: 600px;
@@ -26,7 +26,7 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $bold;
-  color: $title-black;
+  color: $white;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);
@@ -52,7 +52,7 @@
   letter-spacing: rem(0);
   font-family: $base-font-family;
   font-weight: $medium;
-  color: $black;
+  color: $white;
   @include mq("md") {
     font-size: rem(14);
     line-height: calc(24 / 14);

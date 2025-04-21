@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .question {
-  margin: 0 0 rem(160);
+  margin: rem(100) 0 rem(160);
   padding: 0 $padding-pc;
 }
 
@@ -23,7 +23,7 @@
 
 @include mq("md") {
   .question {
-    margin: 0 0 rem(50);
+    margin: rem(50) 0 rem(50);
     padding: 0 $padding-sp;
   }
 

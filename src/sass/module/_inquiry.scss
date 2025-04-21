@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .inquiry {
-  margin: 0 0 rem(100);
-  padding: 0 $padding-pc;
+  margin: rem(0) 0 rem(0);
+  padding: rem(100) $padding-pc rem(100);
+  background-color: $white;
 }
 
 .inquiry__inner {
@@ -197,8 +198,8 @@
 
 @include mq("md") {
   .inquiry {
-    margin: 0 0 rem(50);
-    padding: 0 $padding-sp;
+    margin: 0 0 rem(0);
+    padding: rem(50) $padding-sp rem(50);
   }
 
   .inquiry__inner {
@@ -218,8 +219,7 @@
 
 @include mq("sm") {
   .inquiry {
-    margin: 0 0 rem(50);
-    padding: 0 $padding-sp;
+    // padding: 0 $padding-sp;
   }
 
   .inquiry__inner {

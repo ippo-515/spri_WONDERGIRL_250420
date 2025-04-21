@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .Contact-information {
-  margin-top: 80px;
-  background-color: $light-blue;
+  // margin-top: 80px;
+  background-color: $dark-blue;
+  @include mq("md") {
+  margin-top: rem(40);
+  }
 }
 
 .Contact-information__inner {
@@ -72,7 +75,7 @@
   letter-spacing: 0;
   font-family: $second-font-family;
   font-weight: $bold;
-  color: $dark-blue;
+  color: $black;
   @include mq("md") {
     font-size: rem(24);
     line-height: calc(24 / 24);
@@ -85,11 +88,5 @@
     line-height: calc(24 / 12);
     letter-spacing: 0;
     font-weight: $medium;
-  }
-}
-
-@include mq("md") {
-  .Contact-information {
-    margin-top: 60px;
   }
 }
