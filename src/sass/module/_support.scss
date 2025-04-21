@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.support {
+  margin: 0 0 rem(150);
+  padding: 0 $padding-pc;
+}
+
+.support__inner {
+  max-width: $inner;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.support__title {
+  margin-bottom: rem(30);
+  text-align: left;
+}
+
+.support__cardWrapper {
+}
+
+@include mq("md") {
+  .support {
+    margin: 0 0 rem(50);
+    padding: 0 $padding-sp;
+  }
+  
+  .support__inner {
+    max-width: $inner-md;
+  }
+  
+  .support__title {
+    margin-bottom: rem(15);
+  }
+  
+  .support__cardWrapper {
+  }
+}

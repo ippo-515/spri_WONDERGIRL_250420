@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.introduction {
+  margin: 0 auto rem(150);
+  padding: 0 $padding-pc;
+}
+
+.introduction__inner {
+  max-width: $inner;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  @include mq("md") {
+    max-width: $inner-md;
+    align-items: center;
+  }
+}
+
+.introduction__title {
+  margin-bottom: rem(100);
+}
+
+@include mq("md") {
+  .introduction {
+    margin: 0 auto rem(50);
+    padding: 0 $padding-sp;
+  }
+
+  .introduction__title {
+    margin-bottom: rem(15);
+  }
+}

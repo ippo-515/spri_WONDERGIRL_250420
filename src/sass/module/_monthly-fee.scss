@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.monthly-fee {
+  border: 5px solid $dark-blue;
+  border-radius: 10px;
+  padding: rem(33) rem(60) rem(25);
+  @include mq("md") {
+    padding: rem(23) rem(27) rem(15);
+  }
+}
+
+.monthly-fee__inner {
+}
+
+.monthly-fee__costWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(10);
+}
+
+.monthly-fee__costText {
+  font-size: rem(27);
+  line-height: calc(27 / 27);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  // text-align: left;
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: calc(18 / 18);
+  }
+}
+
+.monthly-fee__cost {
+  font-size: rem(40);
+  line-height: calc(40 / 40);
+  letter-spacing: rem(0);
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  // margin-bottom: rem(35);
+  // text-align: center;
+}
+
+.monthly-fee__text {
+  font-size: rem(16);
+  line-height: calc(16 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+    letter-spacing: -0.07em;
+  }
+}
+
+@include mq("md") {
+  .monthly-fee__inner {
+  }
+
+  .monthly-fee__costWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(10);
+  }
+
+  .monthly-fee__cost {
+    font-size: rem(24);
+    line-height: calc(24 / 24);
+    letter-spacing: rem(0);
+    // font-weight: $bold;
+  }
+}

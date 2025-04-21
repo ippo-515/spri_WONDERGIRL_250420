@@ -1,0 +1,134 @@
+////////////////////
+// フォント設定
+////////////////////
+$base-font-family: "Noto Sans JP", serif;
+$second-font-family: "Roboto", serif;
+
+////////////////////
+// フォントウェイト
+////////////////////
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+////////////////////
+// 色指定
+////////////////////
+$title-black: #1d1d20;
+$black: #333;
+$white: #fff;
+$dark-blue: #01b5bf;
+$light-blue: #daf4f6;
+$gray: #fafafa;
+$red: #ff0000;
+
+////////////////////
+// ブレイクポイント
+////////////////////
+$breakpoints: (
+    xl: 1440,
+    header_bp: 1250,
+    lg: 1023,
+    md: 767,
+    sm: 600,
+
+////////////////////
+// レスポンシブ
+////////////////////
+@include mq("md") {
+  .sp-nav {
+    display: none;
+  }
+}
+
+////////////////////
+// 余白
+////////////////////
+$padding-pc: 25px;
+$padding-sp: 20px;
+
+
+////////////////////
+// 文字設定
+////////////////////
+font-size: rem(28);
+line-height: calc(28 / 28);
+letter-spacing: rem(0);
+font-family: $base-font-family;
+font-weight: $bold;
+color: $white;
+margin-bottom: rem(24);
+
+
+////////////////////
+// 画像ｺﾝﾎﾟｰﾈﾝﾄ
+////////////////////
+<div class="Overview-card__inner__img">
+   <img src="assets/images/common/pc-mistake.png" alt="人為的ミスの防止と削減の画像"/>
+</div>
+
+////////////////////
+// 画像padding
+////////////////////
+
+.k-SectionSpecial__title {
+  position: relative;
+  padding-top: 19.466%;
+}
+.k-SectionSpecial__title img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+////////////////////
+// カラム
+////////////////////
+
+.content-culumn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-culumn__item {
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 2);
+}
+
+////////////////////
+// インナー幅設定
+////////////////////
+.wonder-Overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wonder-Overview__inner {
+  max-width: $inner;
+}
+
+
+////////////////////
+// Flex設定
+////////////////////
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+////////////////////
+// 改行ブレイクポイント
+////////////////////
+<br class="u-mobile">
+<br class="u-desktop">

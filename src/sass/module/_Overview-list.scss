@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.Overview-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: rem(30);
+  @include mq("md") {
+    flex-direction: column;
+    gap: rem(20);
+  }
+}
+
+.Overview-list__item {
+  margin: 0;
+  // padding: 0;
+  width: calc(100% / 3 - rem(30) * 2 / 3);
+  @include mq("md") {
+    width: calc(100% / 1);
+  }
+}

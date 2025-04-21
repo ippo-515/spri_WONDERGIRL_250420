@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.function-card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: rem(30);
+  row-gap: rem(30);
+  @include mq("md") {
+    column-gap: rem(30);
+    row-gap: rem(30);
+    padding: 0 rem(27);
+  }
+  @include mq("sm") {
+    // column-gap: rem(15);
+    // row-gap: rem(15);
+    // padding: 0 rem(50);
+  }
+}
+
+.function-card-list__item {
+  width: calc(100% / 3 - rem(30) * 2 / 3);
+}
+
+@include mq("md") {
+  .function-card-list__item {
+    width: calc(100% / 2 - rem(30) * 1 / 2);
+  }
+}
+
+@include mq("sm") {
+  .function-card-list__item {
+    width: calc(100% / 1);
+  }
+}

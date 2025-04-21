@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.link-right-pc {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: rem(15);
+  z-index: 9998;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.link-right-pc__button {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: calc(16 / 16);
+  letter-spacing: rem(2);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $white;
+  border-radius: 10px 0 0 10px;
+  padding: rem(12) rem(18);
+  writing-mode: vertical-rl; /* テキストを縦書き (右から左) にする */
+  text-orientation: upright; /* 文字の向きを立てたままにする */
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.link-right-pc__button--estimate {
+  background-color: $dark-blue;
+  display: none;
+}
+.link-right-pc__button--experience {
+  background-color: #f9aa2e;
+}
+
+// ホバー
+.link-right-pc__button--estimate:hover {
+  background-color: rgb(1, 181, 191, 0.5);
+}
+.link-right-pc__button--experience:hover {
+  background-color: rgb(249, 170, 46, 0.5);
+}
+
+@include mq("md") {
+  .link-right-pc__button {
+    font-size: rem(14);
+    line-height: calc(14 / 14);
+    letter-spacing: rem(1);
+    // font-weight: $bold;
+    border-radius: 10px 0 0 10px;
+    padding: rem(8) rem(4);
+  }
+}

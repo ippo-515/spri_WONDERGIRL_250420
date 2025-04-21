@@ -1,0 +1,95 @@
+@use "global" as *;
+
+.Contact-information {
+  margin-top: 80px;
+  background-color: $light-blue;
+}
+
+.Contact-information__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(15) 0;
+  @include mq("md") {
+    flex-direction: column;
+    padding: rem(16);
+  }
+}
+
+.Contact-information__text {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  letter-spacing: 0;
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $black;
+  margin-right: rem(20);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(16 / 16);
+    letter-spacing: 0;
+    margin-right: rem(0);
+    margin-bottom: rem(20);
+  }
+}
+
+.Contact-information__phoneWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: rem(20);
+  @include mq("md") {
+    margin-right: rem(0);
+    margin-bottom: rem(8);
+    gap: rem(10);
+  }
+}
+
+.Contact-information__phoneImg {
+  position: relative;
+  // padding-top: 19.466%;
+  width: rem(18.17);
+  height: rem(18.17);
+  @include mq("md") {
+    width: rem(24);
+    height: rem(24);
+  }
+}
+.Contact-information__phoneImg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Contact-information__phone-number {
+  font-size: rem(20);
+  line-height: calc(20 / 20);
+  letter-spacing: 0;
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $dark-blue;
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: calc(24 / 24);
+  }
+}
+
+.Contact-information__textTime {
+  @include mq("md") {
+    font-size: rem(12);
+    line-height: calc(24 / 12);
+    letter-spacing: 0;
+    font-weight: $medium;
+  }
+}
+
+@include mq("md") {
+  .Contact-information {
+    margin-top: 60px;
+  }
+}

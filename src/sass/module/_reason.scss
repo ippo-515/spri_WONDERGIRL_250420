@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.reason {
+  margin: 0 0 rem(100);
+  padding: 0 $padding-pc;
+}
+
+.reason__inner {
+  max-width: $inner;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-blue;
+  padding: rem(109) rem(80) rem(88);
+  border-radius: 10px;
+  @include mq("md") {
+    max-width: $inner-md;
+    padding: rem(30) rem(16) rem(30);
+  }
+}
+
+.reason__title {
+  font-size: rem(27);
+  line-height: calc(27 / 27);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  margin-bottom: rem(50);
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: calc(24 / 24);
+    margin-bottom: rem(30);
+    text-align: center;
+  }
+}
+
+.reason__cardWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: rem(67);
+  @include mq("md") {
+    column-gap: rem(28);
+    row-gap: rem(15);
+    justify-content: center;
+  }
+}
+
+.reason__cardItem {
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 4 - rem(67) * 3 / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq("md") {
+    width: calc(100% / 2 - rem(28) * 1 / 2);
+  }
+}
+
+.reason__cardImg {
+  position: relative;
+  width: rem(225);
+  height: rem(225);
+  margin-bottom: rem(30);
+  @include mq("md") {
+    width: rem(140);
+    height: rem(140);
+    margin-bottom: rem(15);
+  }
+}
+.reason__cardImg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reason__cardText {
+  font-size: rem(23);
+  line-height: calc(34 / 23);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  text-align: center;
+  white-space: nowrap;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: calc(24 / 14);
+  }
+}
+
+@include mq("md") {
+  .reason {
+    margin: 0 0 rem(50);
+    padding: 0 $padding-sp;
+  }
+}

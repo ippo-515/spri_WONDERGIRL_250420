@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.fee-card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: rem(13);
+  // row-gap: rem(30);
+  @include mq("md") {
+    width: 100%;
+    column-gap: normal;
+  }
+  @include mq("sm") {
+  }
+}
+
+.fee-card-list__item {
+  margin: 0;
+  padding: 0;
+  width: calc(100% / 4 - rem(13) * 3 / 4);
+  @include mq("md") {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    flex-shrink: 0;
+  }
+  @include mq("sm") {
+  }
+}
+
+@include mq("md") {
+}
+@include mq("sm") {
+}

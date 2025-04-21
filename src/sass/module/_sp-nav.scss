@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.sp-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  // left: 0;
+  right: -100%;
+  color: #fff;
+  background-color: $gray;
+  // text-align: center;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  transition: all 0.6s ease;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin-top: 60px;
+  overflow: scroll; /* スクロールを有効にする */
+  z-index: 9999;
+  padding: rem(30) 0 rem(100);
+}
+@include mq("header_bp") {
+  .sp-nav {
+    display: block;
+  }
+}
+.sp-nav__content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+.sp-nav__item {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: 0.4s all;
+}
+.sp-nav__item:last-of-type {
+  padding-bottom: 0;
+}
+// .sp-nav__item:hover {
+//   background: #ddd;
+// }
+.sp-nav__item a {
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: 0.002;
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: $title-black;
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+}
+.sp-nav__item:hover a {
+  opacity: 1;
+  color: #08a2ae;
+}
+.sp-nav.active {
+  opacity: 1;
+  right: 0%;
+}

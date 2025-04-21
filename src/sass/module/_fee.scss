@@ -1,0 +1,143 @@
+@use "global" as *;
+
+.fee {
+  margin: 0 0 rem(100);
+  padding: 0 $padding-pc;
+  overflow: hidden;
+}
+
+.fee__inner {
+  max-width: $inner;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // column-gap: rem(13);
+  text-align: center;
+}
+
+.fee__title {
+  margin-bottom: rem(50);
+  text-align: left;
+}
+
+.fee__monthly-fee {
+  margin: 0 rem(275) rem(34);
+  text-align: left;
+}
+
+.fee__annual {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: calc(27 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $dark-blue;
+  background-color: $light-blue;
+  border-radius: 35px;
+  padding: rem(13.5) rem(25);
+  // margin: 0 auto;
+  margin-bottom: rem(30);
+}
+
+.fee__first-cost {
+  font-size: rem(27);
+  line-height: calc(27 / 27);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $white;
+  background-color: $dark-blue;
+  text-align: center;
+  padding: rem(10) $padding-pc;
+  margin-bottom: rem(30);
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: calc(18 / 18);
+    margin-bottom: rem(15);
+    border-radius: 8px;
+  }
+  @include mq("sm") {
+  }
+}
+
+.fee__example {
+  font-size: rem(27);
+  line-height: calc(27 / 27);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  text-align: center;
+  margin-bottom: rem(30);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(16 / 16);
+    margin-bottom: rem(34);
+  }
+  @include mq("sm") {
+    // font-size: rem(20);
+    //   line-height: calc(20 / 20);
+  }
+}
+
+.fee__swiper {
+}
+
+.fee__annual {
+}
+
+.fee__cardWrapper {
+}
+
+@include mq("md") {
+  .fee {
+    margin: 0 0 rem(50);
+    padding: 0 $padding-sp;
+  }
+
+  .fee__inner {
+    max-width: $inner-md;
+    // margin: 0 auto;
+    // text-align: center;
+  }
+
+  .fee__title {
+    margin-bottom: rem(15);
+    // text-align: left;
+  }
+
+  .fee__monthly-fee {
+    margin: 0 rem(80) rem(15);
+    // text-align: left;
+  }
+
+  .fee__annual {
+    margin-bottom: rem(15);
+  }
+}
+
+@include mq("sm") {
+  .fee {
+    margin: 0 0 rem(50);
+    padding: 0 $padding-sp;
+  }
+
+  .fee__inner {
+    max-width: $inner-md;
+  }
+
+  .fee__title {
+    margin-bottom: rem(15);
+  }
+
+  .fee__monthly-fee {
+    margin: 0 0 rem(15) 0;
+  }
+
+  .fee__annual {
+    margin-bottom: rem(15);
+  }
+}

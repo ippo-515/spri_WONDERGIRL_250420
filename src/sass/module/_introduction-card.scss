@@ -1,0 +1,285 @@
+@use "global" as *;
+
+.introduction-card {
+  display: inline-block;
+}
+
+.introduction-card__inner {
+  display: inline-block;
+  // flex-direction: column;
+  // justify-content: center;
+  text-align: center;
+  // align-items: center;
+}
+
+.introduction-card__imgWrapper {
+  position: relative;
+  width: rem(180);
+  height: rem(180);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  // display: inline-block;
+  // padding-right: 100px; /* 画像分のスペースを空ける */
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // height: auto;
+  background-color: $gray;
+  border-radius: 10px;
+  margin-bottom: rem(20);
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.introduction-card__imgWrapper--1 {
+  padding: rem(30) rem(30);
+}
+.introduction-card__imgWrapper--2 {
+  padding: rem(45) rem(52.5);
+}
+.introduction-card__imgWrapper--3 {
+  padding: rem(56) rem(30);
+}
+.introduction-card__imgWrapper--4 {
+  padding: rem(44) rem(44);
+}
+.introduction-card__imgWrapper--5 {
+  padding: rem(52) rem(33);
+}
+
+.introduction-card__imgWrapper--arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -14%;
+  transform: translateY(-50%);
+  width: 10px; /* 画像の横幅を設定 */
+  height: 14.29px;
+
+  background-image: url("../images/common/pc-right_arrow.png");
+  background-size: contain; /* 画像を要素に収める */
+  background-repeat: no-repeat; /* 繰り返しを防ぐ */
+}
+
+.introduction-card__img {
+  position: relative;
+  // max-width: rem(150);
+  // height: auto;
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.introduction-card__img-1 {
+  padding-top: 100.550348267%;
+}
+.introduction-card__img-2 {
+  padding-top: 120.002667022%;
+}
+.introduction-card__img-3 {
+  padding-top: 56.666666666%;
+}
+.introduction-card__img-4 {
+  padding-top: 100%;
+}
+.introduction-card__img-5 {
+  padding-top: 66.666666666%;
+}
+
+.introduction-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  // width: rem(98.14);
+  // max-width: 100%;
+  width: 100%;
+  height: 100%;
+  // height: auto;
+  // height: rem(86.91);
+  object-fit: cover;
+}
+
+.introduction-card__text {
+  font-size: rem(23);
+  line-height: calc(23 / 23);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  text-align: center;
+}
+
+@include mq("md") {
+  .introduction-card {
+    display: inline-block;
+  }
+
+  .introduction-card__inner {
+    display: inline-block;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    // align-items: center;
+  }
+
+  .introduction-card__imgWrapper {
+    position: relative;
+    width: rem(100);
+    height: rem(100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $gray;
+    border-radius: 10px;
+    margin-bottom: rem(10);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .introduction-card__imgWrapper--1 {
+    padding: rem(15) rem(15);
+  }
+  .introduction-card__imgWrapper--2 {
+    padding: rem(22.5) rem(26);
+  }
+  .introduction-card__imgWrapper--3 {
+    padding: rem(25) rem(15);
+  }
+  .introduction-card__imgWrapper--4 {
+    padding: rem(22) rem(22);
+  }
+  .introduction-card__imgWrapper--5 {
+    padding: rem(26) rem(16.5);
+  }
+
+  .introduction-card__imgWrapper--arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -18%;
+    transform: translateY(-50%);
+    width: 10px; /* 画像の横幅を設定 */
+    height: 14.29px;
+
+    background-image: url("../images/common/pc-right_arrow.png");
+    background-size: contain; /* 画像を要素に収める */
+    background-repeat: no-repeat; /* 繰り返しを防ぐ */
+  }
+
+  .introduction-card__img {
+    position: relative;
+    // max-width: rem(150);
+    // height: auto;
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .introduction-card__img-1 {
+    // padding-top: 100.550348267%;
+  }
+  .introduction-card__img-2 {
+    // padding-top: 120.002667022%;
+  }
+  .introduction-card__img-3 {
+    // padding-top: 56.666666666%;
+  }
+  .introduction-card__img-4 {
+    // padding-top: 100%;
+  }
+  .introduction-card__img-5 {
+    // padding-top: 66.666666666%;
+  }
+
+  .introduction-card__img img {
+  }
+
+  .introduction-card__text {
+    font-size: rem(16);
+    line-height: calc(16 / 16);
+    letter-spacing: rem(0);
+    font-family: $base-font-family;
+    font-weight: $bold;
+    color: $title-black;
+    text-align: center;
+  }
+}
+@include mq("sm") {
+  .introduction-card {
+    // display: inline-block;
+  }
+
+  .introduction-card__inner {
+    display: block;
+  }
+
+  .introduction-card__imgWrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: rem(5);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .introduction-card__imgWrapper--1 {
+    // padding: rem(30) rem(30);
+  }
+  .introduction-card__imgWrapper--2 {
+    // padding: rem(45) rem(52.5);
+  }
+  .introduction-card__imgWrapper--3 {
+    // padding: rem(56) rem(30);
+  }
+  .introduction-card__imgWrapper--4 {
+    // padding: rem(44) rem(44);
+  }
+  .introduction-card__imgWrapper--5 {
+    // padding: rem(52) rem(33);
+  }
+
+  .introduction-card__imgWrapper--arrow::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    // right: -14%;
+    bottom: -3.2em;
+    right: 50%;
+    transform: translateX(50%) translateY(0) rotate(90deg);
+    width: 10px; /* 画像の横幅を設定 */
+    height: 14.29px;
+
+    background-image: url("../images/common/pc-right_arrow.png");
+    background-size: contain; /* 画像を要素に収める */
+    background-repeat: no-repeat; /* 繰り返しを防ぐ */
+  }
+
+  .introduction-card__img {
+    // position: relative;
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .introduction-card__img-1 {
+    // padding-top: 100.550348267%;
+  }
+  .introduction-card__img-2 {
+    // padding-top: 120.002667022%;
+  }
+  .introduction-card__img-3 {
+    // padding-top: 56.666666666%;
+  }
+  .introduction-card__img-4 {
+    // padding-top: 100%;
+  }
+  .introduction-card__img-5 {
+    // padding-top: 66.666666666%;
+  }
+
+  .introduction-card__img img {
+  }
+
+  .introduction-card__text {
+    font-size: rem(16);
+    line-height: calc(16 / 16);
+    letter-spacing: rem(0);
+    // font-weight: $bold;
+    // text-align: center;
+  }
+}

@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.question {
+  margin: 0 0 rem(160);
+  padding: 0 $padding-pc;
+}
+
+.question__inner {
+  max-width: $inner;
+  margin: 0 auto;
+}
+
+.question__title {
+  margin-bottom: rem(30);
+}
+
+.question__accordion {
+  padding: 0 rem(80);
+}
+
+.question__accordionItem {
+}
+
+@include mq("md") {
+  .question {
+    margin: 0 0 rem(50);
+    padding: 0 $padding-sp;
+  }
+
+  .question__inner {
+    max-width: $inner-md;
+    margin: 0 auto;
+  }
+
+  .question__title {
+    margin-bottom: rem(15);
+  }
+
+  .question__accordion {
+    padding: 0 rem(0);
+  }
+
+  .question__accordionItem {
+  }
+}

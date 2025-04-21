@@ -1,0 +1,69 @@
+@use "global" as *;
+
+/*メニューボタン　展開前*/
+.expand-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  // cursor: pointer;
+  text-align: center;
+}
+
+.expand-icon span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: $dark-blue;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.expand-icon span:nth-of-type(1) {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.expand-icon span:nth-of-type(2) {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/*メニューボタン　展開後*/
+.expand-icon.active span:nth-child(1) {
+  // top: 10px;
+  // background: #fff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.expand-icon.active span:nth-child(2) {
+  // top: 10px;
+  // background: #fff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+@include mq("md") {
+  .expand-icon {
+    margin-top: rem(8);
+    width: 16px;
+    height: 16px;
+  }
+
+  .expand-icon span {
+    height: 2px;
+  }
+  .expand-icon span:nth-of-type(1) {
+  }
+  .expand-icon span:nth-of-type(2) {
+  }
+
+  /*メニューボタン　展開後*/
+  .expand-icon.active span:nth-child(1) {
+  }
+  .expand-icon.active span:nth-child(2) {
+  }
+}

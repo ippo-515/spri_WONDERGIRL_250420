@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.information-card {
+  border-top: 1px solid $gray;
+  padding: rem(30) 0;
+  @include mq("md") {
+    padding: rem(30) rem(27) rem(20);
+  }
+}
+
+.information-card__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  column-gap: rem(20);
+}
+
+.information-card__timeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: rem(20);
+}
+
+.information-card__time {
+  font-size: rem(16);
+  line-height: calc(16 / 16);
+  letter-spacing: rem(0);
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $white;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: calc(14 / 14);
+  }
+}
+
+.information-card__tag {
+  font-size: rem(16);
+  line-height: calc(16 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 14px;
+  padding: rem(5) rem(28);
+  flex-shrink: 0;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: calc(14 / 14);
+    letter-spacing: rem(0);
+    font-weight: $bold;
+    padding: rem(7) rem(22);
+  }
+}
+
+.information-card__text {
+  font-size: rem(18);
+  line-height: calc(24 / 18);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $white;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(20 / 16);
+  }
+}
+
+@include mq("md") {
+  .information-card__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    column-gap: rem(0);
+    row-gap: rem(15);
+  }
+
+  .information-card__timeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: rem(20);
+  }
+}

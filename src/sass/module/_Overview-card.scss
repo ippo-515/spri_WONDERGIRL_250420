@@ -1,0 +1,184 @@
+@use "global" as *;
+
+.Overview-card {
+  background-color: $light-blue;
+  border-radius: 10px;
+  height: rem(380);
+  max-height: rem(380);
+  @include mq("md") {
+    height: auto;
+    max-height: none;
+  }
+  @include mq("sm") {
+  }
+}
+
+.Overview-card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+  // row-gap: rem(30);
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  padding: rem(64.7) 0 rem(44) 0;
+  @include mq("md") {
+    padding: rem(25) rem(27);
+  }
+  @include mq("sm") {
+    // padding: rem(25) rem(50);
+  }
+}
+
+.Overview-card__imgWrapper {
+  @include mq("md") {
+  }
+}
+// ﾓﾃﾞｨﾌｧｲｱ
+.Overview-card__imgWrapper--miss {
+  padding: 0 rem(150.9);
+  @include mq("md") {
+    padding: 0 rem(92);
+  }
+  @include mq("sm") {
+    // padding: 0 rem(80);
+  }
+}
+.Overview-card__imgWrapper--time {
+  padding: 0 rem(153);
+}
+.Overview-card__imgWrapper--personalization {
+  padding: 0 rem(133.5);
+  @include mq("md") {
+    padding: 0 rem(75);
+  }
+  @include mq("sm") {
+  }
+}
+
+.Overview-card__img {
+  position: relative;
+}
+// ﾓﾃﾞｨﾌｧｲｱ
+.Overview-card__img--miss {
+  padding-top: 88.557163236%;
+}
+.Overview-card__img--time {
+  padding-top: 104.13697756%;
+}
+.Overview-card__img--personalization {
+  padding-top: 90.281329923%;
+}
+
+.Overview-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Overview-card__textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 rem(30);
+  // margin-top: rem(63.4);
+  @include mq("md") {
+    padding: 0;
+    margin-top: rem(15);
+  }
+  @include mq("sm") {
+    // padding: 0 rem(15);
+    // margin-top: rem(15);
+  }
+}
+
+.Overview-card__title {
+  font-size: rem(23);
+  line-height: calc(23 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  margin-bottom: rem(15);
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: calc(20 / 18);
+    letter-spacing: rem(0);
+    // font-weight: $bold;
+    margin-bottom: rem(15);
+    white-space: nowrap;
+  }
+  @include mq("sm") {
+    // font-size: rem(20);
+    // line-height: calc(23 / 20);
+    // letter-spacing: rem(0);
+    // margin-bottom: rem(15);
+  }
+}
+
+.Overview-card__text {
+  text-align: left;
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: $black;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: calc(24 / 14);
+    letter-spacing: rem(0);
+    // font-weight: $medium;
+  }
+  @include mq("sm") {
+    // font-size: rem(16);
+    // line-height: calc(24 / 16);
+    // letter-spacing: rem(0);
+  }
+}
+
+@include mq("md") {
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .Overview-card__imgWrapper--time {
+    padding: 0 rem(51);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .Overview-card__img--miss {
+    padding-top: 88.557163236%;
+  }
+  .Overview-card__img--time {
+    padding-top: 104.13697756%;
+  }
+  .Overview-card__img--personalization {
+    padding-top: 90.281329923%;
+  }
+
+  .Overview-card__img img {
+  }
+}
+
+@include mq("sm") {
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .Overview-card__imgWrapper--time {
+    padding: 0 rem(80);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .Overview-card__img--miss {
+    padding-top: 87.857163236%;
+  }
+  .Overview-card__img--time {
+    padding-top: 103.53697756%;
+  }
+  .Overview-card__img--personalization {
+    padding-top: 90.581329923%;
+  }
+}

@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.pc-nav {
+  display: block;
+  height: inherit;
+  margin: 0 0 0 auto;
+}
+@include mq("header_bp") {
+  .pc-nav {
+    display: none;
+  }
+}
+.pc-nav__content {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.pc-nav__item {
+  height: inherit;
+  padding: 0 rem(15);
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  letter-spacing: rem(2);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.pc-nav__item--blue {
+  color: $dark-blue;
+}
+
+.pc-nav__item--download {
+  padding: 0 rem(36);
+  font-size: rem(13);
+  line-height: calc(13 / 13);
+  letter-spacing: rem(2);
+  height: rem(45);
+  background-color: $dark-blue;
+  color: $white;
+  transition: background-color 0.3s ease;
+  border-radius: rem(25);
+  margin-left: rem(15);
+}
+
+.pc-nav__item--download:hover {
+  background-color: rgb(1, 181, 191, 0.5);
+}
+
+.pc-nav__item a {
+  display: inline-block;
+  /* padding: 1em 0; */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.pc-nav__item:hover {
+  cursor: pointer;
+}
+.pc-nav__item:hover a {
+  opacity: 1;
+  color: #08a2ae;
+  // border-bottom: solid 1px $dark-blue;
+}
+
+.pc-nav__item--download:hover a {
+  color: $white;
+  border-bottom:none;
+}

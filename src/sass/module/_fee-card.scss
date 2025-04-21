@@ -1,0 +1,287 @@
+@use "global" as *;
+
+.fee-card {
+  position: relative;
+  padding: 0 rem(20) rem(50);
+  border-radius: 10px;
+  border: 5px solid transparent;
+  background-color: $gray;
+  @include mq("md") {
+    padding: 0 rem(20) rem(25);
+    max-width: none;
+    // margin: 0 auto;
+  }
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.fee-card--border {
+  border: 5px solid $dark-blue;
+}
+
+.fee-card__inner {
+  padding: rem(58) 0 0;
+  @include mq("md") {
+    padding: rem(35) 0 0;
+  }
+}
+.fee-card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: rem(16);
+  line-height: calc(16 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $gray;
+  text-align: center;
+  background-color: $dark-blue;
+  padding: rem(0) 0 rem(5);
+}
+
+.fee-card__titleWrapper {
+  margin-bottom: rem(30);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fee-card__titleEnglish {
+  font-size: rem(19);
+  line-height: calc(19 / 19);
+  letter-spacing: rem(0);
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $dark-blue;
+  text-transform: uppercase;
+  margin-bottom: rem(10);
+}
+
+.fee-card__titleJapanese {
+  font-size: rem(27);
+  line-height: calc(27 / 27);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  color: $title-black;
+}
+
+.fee-card__overview {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: $black;
+  // margin-bottom: rem(34);
+  text-align: left;
+}
+
+.fee-card__amount {
+  font-size: rem(40);
+  // line-height: calc(40 / 40);
+  line-height: rem(100);
+  letter-spacing: rem(0);
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $title-black;
+  // margin-bottom: rem(35);
+  text-align: center;
+}
+
+.fee-card__amount--japanese {
+  font-size: rem(30);
+  // line-height: calc(30 / 30);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+}
+
+.fee-card__link {
+  margin-bottom: rem(26);
+}
+
+.fee-card__detailWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: rem(18);
+}
+
+.fee-card__detailItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: rem(10);
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.fee-card__detailItem--nomargin {
+  margin-top: rem(-18);
+}
+
+.fee-card__detailImg {
+  position: relative;
+  width: rem(20);
+  height: rem(20);
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.fee-card__detailImg--none {
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.fee-card__detailImg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fee-card__detailText {
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  letter-spacing: rem(0);
+  font-family: $base-font-family;
+  font-weight: $medium;
+  color: $black;
+}
+
+// ﾓﾃﾞｨﾌｧｲｱ
+.fee-card__detailText--red {
+  color: $red;
+  white-space: nowrap;
+}
+
+.fee-card__detailStrikethrough {
+  text-decoration: line-through;
+}
+
+@include mq("md") {
+
+  // .fee-card__inner--recommended {
+  //   padding: rem(35) 0 0;
+  // }
+  .fee-card__tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: rem(16);
+    line-height: calc(16 / 16);
+    letter-spacing: rem(0);
+    font-family: $base-font-family;
+    font-weight: $bold;
+    color: $gray;
+    text-align: center;
+    background-color: $dark-blue;
+    padding: rem(0) 0 rem(5);
+  }
+
+  .fee-card__titleWrapper {
+    margin-bottom: rem(15);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .fee-card__titleEnglish {
+    font-size: rem(18);
+    line-height: calc(18 / 18);
+    letter-spacing: rem(0);
+    margin-bottom: rem(10);
+  }
+
+  .fee-card__titleJapanese {
+    font-size: rem(24);
+    line-height: calc(24 / 24);
+    letter-spacing: rem(0);
+    // font-weight: $bold;
+  }
+
+  .fee-card__overview {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    letter-spacing: rem(0);
+    font-family: $base-font-family;
+    font-weight: $medium;
+    color: $black;
+    // margin-bottom: rem(34);
+    text-align: center;
+  }
+
+  .fee-card__amount {
+    font-size: rem(35);
+    // line-height: calc(27 / 27);
+    line-height: rem(70);
+    letter-spacing: rem(0);
+    font-family: $second-font-family;
+    font-weight: $bold;
+    color: $title-black;
+    // margin-bottom: rem(35);
+    text-align: center;
+  }
+
+  .fee-card__amount--japanese {
+    font-size: rem(30);
+    // line-height: calc(30 / 30);
+    letter-spacing: rem(0);
+    font-family: $base-font-family;
+  }
+
+  .fee-card__link {
+    margin-bottom: rem(26);
+  }
+
+  .fee-card__detailWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: rem(18);
+  }
+
+  .fee-card__detailItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: rem(5);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .fee-card__detailItem--nomargin {
+    margin-top: rem(-18);
+  }
+
+  .fee-card__detailImg {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .fee-card__detailImg--none {
+  }
+
+  .fee-card__detailImg img {
+  }
+
+  .fee-card__detailText {
+    font-size: rem(12);
+    line-height: calc(18 / 12);
+    letter-spacing: rem(0);
+    // font-weight: $medium;
+  }
+
+  // ﾓﾃﾞｨﾌｧｲｱ
+  .fee-card__detailText--red {
+  }
+
+  .fee-card__detailStrikethrough {
+  }
+}

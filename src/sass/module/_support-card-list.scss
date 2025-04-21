@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.support-card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: rem(30);
+}
+
+.support-card-list__item {
+}
+
+@include mq("md") {
+  .support-card-list {
+    row-gap: rem(15);
+  }
+
+  .support-card-list__item {
+  }
+}
