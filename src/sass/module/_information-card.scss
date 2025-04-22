@@ -64,10 +64,19 @@
   font-family: $base-font-family;
   font-weight: $bold;
   color: $black;
+  border-bottom: 1px solid transparent;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(20 / 16);
   }
+}
+
+// .information-card__text--link {
+//   color: blue;
+// }
+
+.information-card__text--link:hover {
+  border-bottom: 1px solid $background-color;
 }
 
 @include mq("md") {
