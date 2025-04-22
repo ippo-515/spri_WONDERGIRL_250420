@@ -93,24 +93,8 @@
       <!--sp-nav-->
       <nav class="header__sp-nav sp-nav js-sp-nav">
         <ul class="sp-nav__content">
-          <!-- <li class="sp-nav__item">
-            <a href="#section-wonder-Overview" class="js-sp-navlink"
-              >WONDERCARTとは</a
-            >
-          </li> -->
-          <!-- <li class="sp-nav__item">
-            <a href="#section-introduction" class="js-sp-navlink"
-              >導入までの流れ</a
-            >
-          </li>
           <li class="sp-nav__item">
-            <a href="#section-support" class="js-sp-navlink">サポート</a>
-          </li>
-          <li class="sp-nav__item">
-            <a href="#section-function" class="js-sp-navlink">機能</a>
-          </li>
-          <li class="sp-nav__item">
-            <a href="#section-fee" class="js-sp-navlink">料金プラン</a>
+            <a href="#top" class="js-sp-navlink">トップ</a>
           </li>
           <li class="sp-nav__item">
             <a href="#section-question" class="js-sp-navlink">よくある質問</a>
@@ -119,11 +103,9 @@
             <a href="#section-Latest-information" class="js-sp-navlink"
               >最新情報</a
             >
-          </li> -->
+          </li>
           <li class="sp-nav__item">
-            <a href="https://www.jicoo.com/t/s-pri/e/Hv0LKGxM" target="_blank"
-              >商談予約フォーム</a
-            >
+            <a href="#section-inquiry" class="js-sp-navlink">お問い合わせ</a>
           </li>
         </ul>
       </nav>
@@ -148,8 +130,8 @@
       </div> -->
       <div class="link-bottom-sp">
         <a
-          href="資料_wondergirl.pdf"
-          download="資料_wondergirl.pdf"
+          href="https://go.wonderline.cloud/l/1058163/2025-04-17/mvw24"
+          target="_blank"
           class="link-bottom-sp__button link-bottom-sp__button--download"
           ><p class="link-bottom-sp__text">資料ダウンロード</p></a
         >
@@ -1767,9 +1749,13 @@
                   >
                   <p class="information-card__tag">お知らせ</p>
                 </div>
-                <p class="information-card__text">
+                <a
+                  href="https://prtimes.jp/main/html/rd/p/000000024.000079265.html"
+                  target="_blank"
+                  class="information-card__text information-card__text--link"
+                >
                   プレスリリースを公開しました。
-                </p>
+                </a>
               </div>
             </div>
             <div class="Latest-information__informationItem information-card">
@@ -1802,7 +1788,7 @@
           </div>
         </div>
       </section>
-      <section class="inquiry">
+      <section id="section-inquiry" class="inquiry">
         <div class="inquiry__inner">
           <div class="inquiry__title Section-title">
             <h2 class="Section-title__title Section-title__title--inquiry">
@@ -1848,8 +1834,8 @@
               </div>
               <p class="inquiry__contentRightText">1分でわかるPDF資料</p>
               <a
-                href="資料_wondergirl.pdf"
-                download="資料_wondergirl.pdf"
+                href="https://go.wonderline.cloud/l/1058163/2025-04-17/mvw24"
+                target="_blank"
                 class="inquiry__contentRightlink linkButton linkButton--download"
                 >資料ダウンロード</a
               >
@@ -1873,23 +1859,14 @@
               <li class="footer__navItem">
                 <a href="#top">TOP</a>
               </li>
-              <!-- <li class="footer__navItem">
-                <a href="#section-introduction">導入までの流れ</a>
-              </li> -->
-              <!-- <li class="footer__navItem">
-                <a href="#section-support">サポート</a>
-              </li> -->
-              <!-- <li class="footer__navItem">
-                <a href="#section-function">機能</a>
-              </li> -->
-              <!-- <li class="footer__navItem">
-                <a href="#section-fee">料金プラン</a>
-              </li> -->
               <li class="footer__navItem">
                 <a href="#section-question">よくある質問</a>
               </li>
               <li class="footer__navItem">
                 <a href="#section-Latest-information">最新情報</a>
+              </li>
+              <li class="footer__navItem">
+                <a href="#section-inquiry">お問い合わせ</a>
               </li>
             </ul>
           </nav>
@@ -1929,18 +1906,22 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
-  <!-- Start of AvacomWidget Code -->
-<script type="text/javascript">
-  (function () {
-  window._avacomWidget = window._avacomWidget || {};
-  window._avacomWidget.api_key = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
-  // window._avacomWidget.image = '';
-  // window._avacomWidget.width = 200;
-  // window._avacomWidget.height = 160;
-  // window._avacomWidget.right = 0;
-  // window._avacomWidget.bottom = 0;
-  })();
+  <script>
+    (function () {
+      const url = new URL(window.location.href);
+      const params = url.searchParams;
+
+      window._chatOrTalkWidget = window._chatOrTalkWidget || {};
+      window._chatOrTalkWidget.scenario_uuid =
+        "81d59442-544f-45a3-9752-4d59f33ba9e2";
+
+      // 以下は表示したい位置に合わせて調整してください
+      window._chatOrTalkWidget.right = 10; // 右端から10px
+      window._chatOrTalkWidget.bottom = 10; // 下端から10px
+    })();
   </script>
-  <script async src="https://avatar.avitachat.com/js/AvacomWidget.js"></script>
-  <!-- End of AvacomWidget Code -->
+  <script
+    async
+    src="https://widget-cot.avitachat.com/js/chat-or-talk-widget.js"
+  ></script>
 </html>
